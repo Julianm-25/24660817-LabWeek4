@@ -20,7 +20,7 @@ public class PrintAndHide : MonoBehaviour
         Debug.Log(transform.name + ":" + i);
         if (transform.tag == "Red" && i == 100)
         {
-            rend.enabled = false;
+            gameObject.SetActive(false);
         }
         if (transform.tag == "Blue" && i == randint)
         {
